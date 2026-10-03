@@ -1,0 +1,8 @@
+# Object Detection and Tracking System - runtime dependencies
+# Recommended: Python 3.10, 3.11 or 3.12 (64-bit) on Windows.
+# Version ranges (not hard pins) let pip pick builds that work together on your Python version.
+ultralytics>=8.3.0   # YOLO models (also installs torchvision and other helpers)
+torch>=2.0.0         # inference backend (pip installs the CPU build on Windows by default)
+opencv-python>=4.8.0 # video capture + display (do NOT install opencv-python-headless alongside)
+numpy>=1.24.0
+scipy>=1.10.0        # Hungarian algorithm used by the SORT tracker

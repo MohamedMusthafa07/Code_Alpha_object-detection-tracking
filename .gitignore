@@ -1,0 +1,36 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Model weights and videos (large files: download/add them locally, do not commit)
+models/*
+!models/README.md
+videos/*
+!videos/README.md
+output/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Secrets (this project needs none, but never commit them)
+.env
+*.key
+secrets.*
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
